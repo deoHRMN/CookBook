@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1F22"
+    tools:context=".Fragments.Home">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Recipe Feed"
+        android:textColor="#FEFEFE"
+        android:textSize="27sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="148dp"
+        android:layout_height="5dp"
+        android:layout_below="@id/textView"
+        android:layout_alignStart="@id/textView"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white" />
+
+    <android.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/view"
+        android:background="@color/white"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Recipes"
+        android:queryBackground="@android:color/transparent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/searchView"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_recipes"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/searchView"
+        tools:listitem="@layout/row"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

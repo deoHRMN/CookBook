@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1F22"
+    tools:context=".Fragments.Create">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1E1F22"
+        tools:context=".Fragments.Create">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Share Recipe"
+            android:textColor="#FEFEFE"
+            android:textSize="27sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="158dp"
+            android:layout_height="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/textView"
+            android:layout_alignStart="@id/textView"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/view"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="18dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible"
+                    tools:src="@tools:sample/backgrounds/scenic" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    android:layout_gravity="center"
+                    android:background="#2B2D30" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Select an Image"
+                    android:textColor="#BFFEFEFE" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <EditText
+                android:id="@+id/editRecipeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="Name of Recipe"
+                android:inputType="text"
+                android:padding="15dp"
+                android:shadowColor="#FEFEFE"
+                android:textColor="#FEFEFE"
+                android:textColorHint="#FEFEFE" />
+
+            <EditText
+                android:id="@+id/editRecipeDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="250dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="Recipe Description"
+                android:inputType="textMultiLine"
+                android:padding="15dp"
+                android:shadowColor="#FEFEFE"
+                android:textColor="#FEFEFE"
+                android:textColorHint="#FEFEFE" />
+
+            <TextView
+                android:id="@+id/btn_create"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:background="#2B2D30"
+                android:backgroundTint="#8BC34A"
+                android:gravity="center"
+                android:text="Share"
+                android:textColor="#FEFEFE"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
